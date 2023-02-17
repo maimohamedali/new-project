@@ -1,0 +1,542 @@
+Archive member included because of file (symbol)
+
+a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./TIMERS_program.o (__mulsi3)
+a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./TIMERS_program.o (__udivmodhi4)
+a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./RTO_program.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+RTO_AstrTasks       0x12              ./RTO_program.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./DIO_program.o
+LOAD ./GI_program.o
+LOAD ./RTO_program.o
+LOAD ./TIMERS_program.o
+LOAD ./main.o
+LOAD a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1628
+ *(.vectors)
+ .vectors       0x00000000       0x54 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_3
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_14
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./DIO_program.o
+ .text          0x0000007c        0x0 ./GI_program.o
+ .text          0x0000007c        0x0 ./RTO_program.o
+ .text          0x0000007c        0x0 ./TIMERS_program.o
+ .text          0x0000007c        0x0 ./main.o
+ .text          0x0000007c        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x0000007c        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000007c        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.DIO_voidInit
+                0x0000007c       0x40 ./DIO_program.o
+                0x0000007c                DIO_voidInit
+ .text.DIO_u8SetPinDirection
+                0x000000bc      0x1dc ./DIO_program.o
+                0x000000bc                DIO_u8SetPinDirection
+ .text.DIO_u8SetPinValue
+                0x00000298      0x22e ./DIO_program.o
+                0x00000298                DIO_u8SetPinValue
+ .text.DIO_u8GetPinValue
+                0x000004c6      0x178 ./DIO_program.o
+                0x000004c6                DIO_u8GetPinValue
+ .text.DIO_u8SetPortDirection
+                0x0000063e      0x11c ./DIO_program.o
+                0x0000063e                DIO_u8SetPortDirection
+ .text.DIO_u8SetPortValue
+                0x0000075a       0x90 ./DIO_program.o
+                0x0000075a                DIO_u8SetPortValue
+ .text.DIO_u8GetPortValue
+                0x000007ea       0xb0 ./DIO_program.o
+                0x000007ea                DIO_u8GetPortValue
+ .text.GI_voidEnable
+                0x0000089a       0x1c ./GI_program.o
+                0x0000089a                GI_voidEnable
+ .text.GI_voidDisable
+                0x000008b6       0x1c ./GI_program.o
+                0x000008b6                GI_voidDisable
+ .text.RTO_voidInit
+                0x000008d2       0x26 ./RTO_program.o
+                0x000008d2                RTO_voidInit
+ .text.RTO_u8CreateTask
+                0x000008f8       0xb4 ./RTO_program.o
+                0x000008f8                RTO_u8CreateTask
+ .text.RTO_voidSchedular
+                0x000009ac       0xf0 ./RTO_program.o
+ .text.TIMER0_u8SetCallBack_OV
+                0x00000a9c       0x50 ./TIMERS_program.o
+                0x00000a9c                TIMER0_u8SetCallBack_OV
+ .text.TIMER0_u8SetCallBack_CTC
+                0x00000aec       0x50 ./TIMERS_program.o
+                0x00000aec                TIMER0_u8SetCallBack_CTC
+ .text.TIMER0_voidSetCompareMatchValue
+                0x00000b3c       0x1c ./TIMERS_program.o
+                0x00000b3c                TIMER0_voidSetCompareMatchValue
+ .text.TIMER0_voidSetPReloadValue
+                0x00000b58       0x22 ./TIMERS_program.o
+                0x00000b58                TIMER0_voidSetPReloadValue
+ .text.TIMER0_u8GetCounterValue
+                0x00000b7a       0x3a ./TIMERS_program.o
+                0x00000b7a                TIMER0_u8GetCounterValue
+ .text.TIMER0_voidInit
+                0x00000bb4       0x96 ./TIMERS_program.o
+                0x00000bb4                TIMER0_voidInit
+ .text.__vector_11
+                0x00000c4a       0xa0 ./TIMERS_program.o
+                0x00000c4a                __vector_11
+ .text.__vector_10
+                0x00000cea       0x96 ./TIMERS_program.o
+                0x00000cea                __vector_10
+ .text.TIMER1_u8SetCallBack_OV
+                0x00000d80       0x68 ./TIMERS_program.o
+                0x00000d80                TIMER1_u8SetCallBack_OV
+ .text.TIMER1_u8SetCallBack_CTC_A
+                0x00000de8       0x68 ./TIMERS_program.o
+                0x00000de8                TIMER1_u8SetCallBack_CTC_A
+ .text.TIMER1_u8SetCallBack_CTC_B
+                0x00000e50       0x68 ./TIMERS_program.o
+                0x00000e50                TIMER1_u8SetCallBack_CTC_B
+ .text.TIMER1_voidSetCompareMatchValue_A
+                0x00000eb8       0x24 ./TIMERS_program.o
+                0x00000eb8                TIMER1_voidSetCompareMatchValue_A
+ .text.TIMER1_voidSetCompareMatchValue_B
+                0x00000edc       0x24 ./TIMERS_program.o
+                0x00000edc                TIMER1_voidSetCompareMatchValue_B
+ .text.TIMER1_voidSetPReloadValue
+                0x00000f00       0x30 ./TIMERS_program.o
+                0x00000f00                TIMER1_voidSetPReloadValue
+ .text.TIMER1_voidSetInputCaptureValue
+                0x00000f30       0x24 ./TIMERS_program.o
+                0x00000f30                TIMER1_voidSetInputCaptureValue
+ .text.TIMER1_u8GetCounterValue
+                0x00000f54       0x3e ./TIMERS_program.o
+                0x00000f54                TIMER1_u8GetCounterValue
+ .text.TIMER1_voidHW_ICUInit
+                0x00000f92       0x2a ./TIMERS_program.o
+                0x00000f92                TIMER1_voidHW_ICUInit
+ .text.TIMER1_u8GetPWMOnPeriod
+                0x00000fbc       0x3e ./TIMERS_program.o
+                0x00000fbc                TIMER1_u8GetPWMOnPeriod
+ .text.TIMER1_u8GetPWMTotalPeriod
+                0x00000ffa       0x54 ./TIMERS_program.o
+                0x00000ffa                TIMER1_u8GetPWMTotalPeriod
+ .text.TIMER1_u8GerDutyCycle
+                0x0000104e       0x78 ./TIMERS_program.o
+                0x0000104e                TIMER1_u8GerDutyCycle
+ .text.TIMER1_voidInit
+                0x000010c6       0xea ./TIMERS_program.o
+                0x000010c6                TIMER1_voidInit
+ .text.__vector_9
+                0x000011b0       0xd6 ./TIMERS_program.o
+                0x000011b0                __vector_9
+ .text.__vector_7
+                0x00001286       0xc6 ./TIMERS_program.o
+                0x00001286                __vector_7
+ .text.__vector_8
+                0x0000134c       0xc6 ./TIMERS_program.o
+                0x0000134c                __vector_8
+ .text.__vector_6
+                0x00001412       0xbe ./TIMERS_program.o
+                0x00001412                __vector_6
+ .text.main     0x000014d0       0x4c ./main.o
+                0x000014d0                main
+ .text.App_voidTask1
+                0x0000151c       0x36 ./main.o
+                0x0000151c                App_voidTask1
+ .text.App_voidTask2
+                0x00001552       0x36 ./main.o
+                0x00001552                App_voidTask2
+ .text.App_voidTask3
+                0x00001588       0x36 ./main.o
+                0x00001588                App_voidTask3
+ .text.libgcc   0x000015be       0x3e a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x000015be                __mulsi3
+ .text.libgcc   0x000015fc       0x28 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x000015fc                __udivmodhi4
+ .text.libgcc   0x00001624        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001624        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001624                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001624        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001624                exit
+                0x00001624                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001624        0x4 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001628                _etext = .
+
+.data           0x00800060        0x0 load address 0x00001628
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./DIO_program.o
+ .data          0x00800060        0x0 ./GI_program.o
+ .data          0x00800060        0x0 ./RTO_program.o
+ .data          0x00800060        0x0 ./TIMERS_program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060       0x46
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./DIO_program.o
+ .bss           0x00800060        0x0 ./GI_program.o
+ .bss           0x00800060        0x0 ./RTO_program.o
+ .bss           0x00800060        0x0 ./TIMERS_program.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 a:/000-desktop/embedded systems/1-avr course/00-tools/00-imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.TIMER0_pfOV
+                0x00800060        0x2 ./TIMERS_program.o
+ .bss.TIMER0_pfCTC
+                0x00800062        0x2 ./TIMERS_program.o
+ .bss.Local_u16CounterOVF.1434
+                0x00800064        0x2 ./TIMERS_program.o
+ .bss.Local_u16CounterCTC.1452
+                0x00800066        0x2 ./TIMERS_program.o
+ .bss.TIMER1_pfOV
+                0x00800068        0x2 ./TIMERS_program.o
+ .bss.TIMER1_pfCTCA
+                0x0080006a        0x2 ./TIMERS_program.o
+ .bss.TIMER1_pfCTCB
+                0x0080006c        0x2 ./TIMERS_program.o
+ .bss.TIMER1_u16OnPeriod
+                0x0080006e        0x2 ./TIMERS_program.o
+ .bss.TIMER1_u16OffPeriod
+                0x00800070        0x2 ./TIMERS_program.o
+ .bss.Local_u32CounterOVF.1864
+                0x00800072        0x4 ./TIMERS_program.o
+ .bss.Local_u32CounterCTCA.1882
+                0x00800076        0x4 ./TIMERS_program.o
+ .bss.Local_u32CounterCTCB.1898
+                0x0080007a        0x4 ./TIMERS_program.o
+ .bss.Local_u16OldValue.1916
+                0x0080007e        0x2 ./TIMERS_program.o
+ .bss.Local_u8Flag.1915
+                0x00800080        0x1 ./TIMERS_program.o
+ .bss.TIMER0_u16OV_CounterValue
+                0x00800081        0x2 ./TIMERS_program.o
+ .bss.TIMER0_u8PreloadValue
+                0x00800083        0x1 ./TIMERS_program.o
+ .bss.TIMER0_u16CTC_CounterValue
+                0x00800084        0x2 ./TIMERS_program.o
+ .bss.TIMER1_u32OV_CounterValue
+                0x00800086        0x4 ./TIMERS_program.o
+ .bss.TIMER1_u16PreloadValue
+                0x0080008a        0x2 ./TIMERS_program.o
+ .bss.TIMER1_u32CTCA_CounterValue
+                0x0080008c        0x4 ./TIMERS_program.o
+ .bss.TIMER1_u32CTCB_CounterValue
+                0x00800090        0x4 ./TIMERS_program.o
+ *(COMMON)
+ COMMON         0x00800094       0x12 ./RTO_program.o
+                0x00800094                RTO_AstrTasks
+                0x008000a6                PROVIDE (__bss_end, .)
+                0x00001628                __data_load_start = LOADADDR (.data)
+                0x00001628                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000a6        0x0
+                0x008000a6                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000a6                PROVIDE (__noinit_end, .)
+                0x008000a6                _end = .
+                0x008000a6                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1f08
+ *(.stab)
+ .stab          0x00000000      0x90c ./DIO_program.o
+ .stab          0x0000090c      0x144 ./GI_program.o
+                                0x1e0 (size before relaxing)
+ .stab          0x00000a50      0x2b8 ./RTO_program.o
+                                0x354 (size before relaxing)
+ .stab          0x00000d08      0xf0c ./TIMERS_program.o
+                                0xfa8 (size before relaxing)
+ .stab          0x00001c14      0x2f4 ./main.o
+                                0x390 (size before relaxing)
+
+.stabstr        0x00000000      0xdd6
+ *(.stabstr)
+ .stabstr       0x00000000      0xdd6 ./DIO_program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(069-RTO_Driver_Test.elf elf32-avr)
+LOAD linker stubs
